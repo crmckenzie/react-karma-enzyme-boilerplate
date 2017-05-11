@@ -25,10 +25,6 @@ if (process.argv.indexOf("--singleRun") > -1) {
 
 var settings = {configFile: config, singleRun: singleRun, autoWatch: autoWatch};
 
-var options = require(config);
-options.singleRun = singleRun;
-options.autoWatch = autoWatch;
-
 var server = new Server(settings, function(exitCode) {
   console.log('Karma has exited with ' + exitCode)
   process.exit(exitCode)

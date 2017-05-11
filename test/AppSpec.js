@@ -1,6 +1,7 @@
 import Page from 'react-page-object'
 import React from 'react'
 import App from 'App'
+import { shallow } from 'enzyme';
 
 describe('AppSpec', function() {
   let page
@@ -17,7 +18,8 @@ describe('AppSpec', function() {
     expect(page.content()).to.match(/Welcome to React/)
   })
 
-  // it('fails', () => {
-  //   expect(true).to.eq(false);
-  // })
+  it('supports enzyme', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.find("div.App")).to.have.length(1);
+  });
 })
