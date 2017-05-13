@@ -11,6 +11,7 @@ You can find the most recent version of this guide [here](https://github.com/fac
 - [Available Scripts](#available-scripts)
   - [npm start](#npm-start)
   - [npm test](#npm-test)
+  - [npm test:once](#npm-test:once)
   - [npm run build](#npm-run-build)
   - [npm run eject](#npm-run-eject)
 - [Supported Language Features and Polyfills](#supported-language-features-and-polyfills)
@@ -157,6 +158,10 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.<br>
 See the section about [running tests](#running-tests) for more information.
+
+### `npm test:once`
+
+Launches the test runner to run the tests once and exit.
 
 ### `npm run build`
 
