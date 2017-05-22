@@ -3,7 +3,7 @@ import 'babel-polyfill'
 import 'whatwg-fetch'
 
 // require all the test files in the test folder that end with Spec.js or Spec.jsx
-const testsContext = require.context(".", true, /Spec.jsx?$/);
+const testsContext = require.context(".", true, /\.spec.jsx?$/);
 testsContext.keys().forEach(testsContext);
 
 // output at when the test were run
