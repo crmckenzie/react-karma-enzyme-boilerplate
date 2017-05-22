@@ -48,8 +48,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --singleRun",
-    "test:watch": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "test:once": "node scripts/test.js --singleRun"
   },
   "babel": {
     "presets": [
